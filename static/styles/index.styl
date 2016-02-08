@@ -1,0 +1,43 @@
+$open-sans = 'Open Sans', sans-serif
+
+body, html
+  margin 0; padding 0
+  height 100%; width 100%
+body
+  background-image url('../images/empire-min.jpg')
+  background-size cover
+  background-repeat no-repeat
+  background-position 0% 80%
+  background-color #000
+  color #fff
+  font-family $open-sans
+
+.overlay
+  position fixed
+  top 0; left 0;
+  height 100%; width 100%
+  background-color rgba(#000, 0.5)
+.app
+  position absolute
+  top 50%
+  left 0; right 0
+  margin auto
+  transform translateY(@top * -1)
+  text-align center
+  .stay-tuned
+    h1
+      font-weight 300
+      font-size 5em
+      text-transform uppercase
+      margin 0; padding 0
+    p
+      font-weight 300
+      letter-spacing 2px
+  .social
+    font-size 0px
+    a
+      color #fff
+      font-size 35px
+      margin 0px 15px
+      &:hover
+        color darken(@color, 10%)
